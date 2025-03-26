@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/Footer";
+
 import Navbar from './components/Navbar';
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "CarePlus - Professional Senior Care Services",
-  description: "Providing compassionate and professional care services for seniors in the comfort of their own home.",
+  title: "RE-24 Plus - Häusliche Pflege und Betreuung",
+  description: "Ihr zuverlässiger Partner für häusliche Pflege und Betreuung in Speyer und Umgebung.",
 };
 
 export default function RootLayout({
@@ -17,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="de">
       <body className={inter.className}>
         <Navbar />
         {children}

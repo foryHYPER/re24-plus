@@ -1,22 +1,23 @@
 import React from 'react';
+import Image from 'next/image';
 
 const testimonials = [
   {
     name: "Sarah Johnson",
     role: "Patient's Daughter",
-    avatar: "SJ",
+    image: "/MA2.jpg",
     content: "The care and attention my mother receives is exceptional. The staff is professional, caring, and always goes above and beyond."
   },
   {
     name: "Michael Chen",
     role: "Patient",
-    avatar: "MC",
+    image: "/MA3.jpg",
     content: "I've been receiving care for over a year now, and I couldn't be happier. The team is like family to me."
   },
   {
     name: "Emily Rodriguez",
     role: "Family Member",
-    avatar: "ER",
+    image: "/MA4.jpg",
     content: "The quality of care and the dedication of the staff have made a significant difference in our family's life."
   }
 ];
@@ -26,7 +27,7 @@ export default function Testimonials() {
     <section className="py-24 bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-[#FF5F4C] font-semibold mb-4 tracking-wide block uppercase">
+          <span className="text-[#4CAF50] font-semibold mb-4 tracking-wide block uppercase">
             Testimonials
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -44,8 +45,13 @@ export default function Testimonials() {
               className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
               <div className="flex items-center mb-6">
-                <div className="w-14 h-14 bg-[#FF5F4C]/10 rounded-full flex items-center justify-center mr-4">
-                  <span className="text-2xl text-[#FF5F4C]">{testimonial.avatar}</span>
+                <div className="w-14 h-14 rounded-full overflow-hidden relative mr-4">
+                  <Image
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg">{testimonial.name}</h4>
@@ -54,7 +60,7 @@ export default function Testimonials() {
               </div>
               <div className="relative">
                 <svg 
-                  className="absolute -top-4 -left-2 w-8 h-8 text-[#FF5F4C]/10" 
+                  className="absolute -top-4 -left-2 w-8 h-8 text-[#E8F5E9]" 
                   fill="currentColor" 
                   viewBox="0 0 24 24"
                 >
@@ -70,9 +76,9 @@ export default function Testimonials() {
 
         {/* Navigation Dots */}
         <div className="flex justify-center items-center space-x-2 mt-12">
-          <button className="w-3 h-3 rounded-full bg-[#FF5F4C]"></button>
-          <button className="w-3 h-3 rounded-full bg-gray-300 hover:bg-[#FF5F4C]/50 transition-colors"></button>
-          <button className="w-3 h-3 rounded-full bg-gray-300 hover:bg-[#FF5F4C]/50 transition-colors"></button>
+          <button className="w-3 h-3 rounded-full bg-[#4CAF50]"></button>
+          <button className="w-3 h-3 rounded-full bg-gray-300 hover:bg-[#4CAF50]/50 transition-colors"></button>
+          <button className="w-3 h-3 rounded-full bg-gray-300 hover:bg-[#4CAF50]/50 transition-colors"></button>
         </div>
       </div>
     </section>

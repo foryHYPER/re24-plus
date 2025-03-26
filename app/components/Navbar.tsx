@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-
+import Image from 'next/image';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,50 +12,29 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Left - Logo */}
           <div className="flex items-center space-x-2 w-1/4">
-            <svg 
-              className="w-8 h-8 text-white" 
-              viewBox="0 0 24 24" 
-              fill="currentColor"
-            >
-              <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3L12 2z" />
-            </svg>
-            <span className="text-white text-xl font-medium">Healthcare Institution</span>
+            <div className="w-48">
+              <Image
+                src="/logo.png"
+                alt="RE-24 Plus Logo"
+                width={240}
+                height={90}
+                className="w-auto h-auto"
+              />
+            </div>
           </div>
 
           {/* Center - Navigation Items */}
-          <div className="hidden lg:flex items-center justify-center space-x-8 flex-1">
-            <div className="group relative">
-              <button className="text-white hover:text-gray-200 flex items-center space-x-1">
-                <span>Demos</span>
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-            </div>
-            <div className="group relative">
-              <button className="text-white hover:text-gray-200 flex items-center space-x-1">
-                <span>About Us</span>
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-            </div>
-            <button className="text-white hover:text-gray-200">Departments</button>
-            <button className="text-white hover:text-gray-200">Services</button>
-            <div className="group relative">
-              <button className="text-white hover:text-gray-200 flex items-center space-x-1">
-                <span>All Pages</span>
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-            </div>
+          <div className="hidden lg:flex items-center justify-center gap-12 flex-1">
+            <button className="text-white hover:text-gray-200 text-2xl font-medium whitespace-nowrap">Home</button>
+            <button className="text-white hover:text-gray-200 text-2xl font-medium whitespace-nowrap">24 Stunden Betreuung</button>
+            <button className="text-white hover:text-gray-200 text-2xl font-medium whitespace-nowrap">Kosten & Überblick</button>
+            <button className="text-white hover:text-gray-200 text-2xl font-medium whitespace-nowrap">Über uns</button>
           </div>
 
           {/* Right - Contact Button */}
           <div className="w-1/4 flex justify-end">
-            <button className="bg-[#e8f2eb] text-black px-6 py-2.5 rounded-full hover:bg-white transition-colors">
-              Contact Us
+            <button className="bg-[#e8f2eb] text-black px-10 py-4 rounded-full hover:bg-white transition-colors text-2xl whitespace-nowrap">
+              Anfrage
             </button>
           </div>
 
@@ -65,7 +44,7 @@ export default function Navbar() {
             onClick={() => setIsOpen(!isOpen)}
           >
             <svg 
-              className="w-6 h-6" 
+              className="w-8 h-8" 
               fill="none" 
               stroke="currentColor" 
               viewBox="0 0 24 24"
@@ -81,15 +60,14 @@ export default function Navbar() {
 
         {/* Mobile menu */}
         {isOpen && (
-          <div className="lg:hidden mt-4 bg-white/10 backdrop-blur-lg rounded-lg p-4">
-            <div className="flex flex-col space-y-4">
-              <button className="text-white hover:text-gray-200 text-center">Demos</button>
-              <button className="text-white hover:text-gray-200 text-center">About Us</button>
-              <button className="text-white hover:text-gray-200 text-center">Departments</button>
-              <button className="text-white hover:text-gray-200 text-center">Services</button>
-              <button className="text-white hover:text-gray-200 text-center">All Pages</button>
-              <button className="bg-[#e8f2eb] text-black px-6 py-2.5 rounded-full hover:bg-white transition-colors text-center">
-                Contact Us
+          <div className="lg:hidden mt-4 bg-white/10 backdrop-blur-lg rounded-lg p-6">
+            <div className="flex flex-col space-y-8">
+              <button className="text-white hover:text-gray-200 text-center text-2xl font-medium">Home</button>
+              <button className="text-white hover:text-gray-200 text-center text-2xl font-medium">24 Stunden Betreuung</button>
+              <button className="text-white hover:text-gray-200 text-center text-2xl font-medium">Kosten & Überblick</button>
+              <button className="text-white hover:text-gray-200 text-center text-2xl font-medium">Über uns</button>
+              <button className="bg-[#e8f2eb] text-black px-10 py-4 rounded-full hover:bg-white transition-colors text-center text-2xl">
+                Anfrage
               </button>
             </div>
           </div>
