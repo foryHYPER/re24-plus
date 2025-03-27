@@ -4,7 +4,7 @@ import Link from 'next/link';
 const services = [
   {
     icon: (
-      <svg className="w-12 h-12 text-[#4CAF50]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-[#4CAF50]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
       </svg>
     ),
@@ -13,7 +13,7 @@ const services = [
   },
   {
     icon: (
-      <svg className="w-12 h-12 text-[#4CAF50]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-[#4CAF50]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
       </svg>
     ),
@@ -22,7 +22,7 @@ const services = [
   },
   {
     icon: (
-      <svg className="w-12 h-12 text-[#4CAF50]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-[#4CAF50]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
       </svg>
     ),
@@ -31,7 +31,7 @@ const services = [
   },
   {
     icon: (
-      <svg className="w-12 h-12 text-[#4CAF50]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-[#4CAF50]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
       </svg>
     ),
@@ -40,7 +40,7 @@ const services = [
   },
   {
     icon: (
-      <svg className="w-12 h-12 text-[#4CAF50]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-[#4CAF50]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
       </svg>
     ),
@@ -49,7 +49,7 @@ const services = [
   },
   {
     icon: (
-      <svg className="w-12 h-12 text-[#4CAF50]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-[#4CAF50]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
       </svg>
     ),
@@ -60,41 +60,43 @@ const services = [
 
 export default function OurServices() {
   return (
-    <section className="py-24 bg-gray-50">
-      <div className="container mx-auto px-4">
+    <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gray-50">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
-          <div className="flex justify-between items-center mb-16">
-            <div>
-              <h2 className="text-4xl font-bold text-gray-900">Our services</h2>
-              <p className="mt-4 text-lg text-gray-600 max-w-3xl">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 sm:mb-12 md:mb-14 lg:mb-16">
+            <div className="mb-6 sm:mb-0">
+              <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-5xl font-bold text-gray-900">
+                Our services
+              </h2>
+              <p className="mt-3 sm:mt-4 text-base sm:text-lg text-gray-600 max-w-3xl">
                 At The ElderWell, we offer a comprehensive range of services designed to meet the unique needs of seniors, ensuring they receive the care and support they deserve.
               </p>
             </div>
-            <button className="bg-[#1B2A3B] text-white px-6 py-3 rounded-full hover:bg-[#2C3E50] transition-colors">
+            <button className="bg-[#1B2A3B] text-white px-5 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base rounded-full hover:bg-[#2C3E50] transition-colors shadow-lg hover:shadow-xl">
               All services
             </button>
           </div>
 
           {/* Services Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             {services.map((service, index) => (
               <div 
                 key={index}
-                className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
+                className="bg-white p-6 sm:p-7 md:p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
               >
-                <div className="mb-6">
+                <div className="mb-4 sm:mb-6">
                   {service.icon}
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3 sm:mb-4">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 mb-6">
+                <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6">
                   {service.description}
                 </p>
                 <Link 
                   href={`/services/${service.title.toLowerCase().replace(/\s+/g, '-')}`}
-                  className="text-[#4CAF50] font-medium hover:text-[#43A047] transition-colors"
+                  className="text-[#4CAF50] text-sm sm:text-base font-medium hover:text-[#43A047] transition-colors"
                 >
                   Learn more
                 </Link>

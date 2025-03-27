@@ -42,53 +42,53 @@ const services = [
 
 export default function ServiceHighlights() {
   return (
-    <section className="py-24 bg-gray-50 relative overflow-hidden">
+    <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gray-50 relative overflow-hidden">
       {/* Decorative circles */}
-      <div className="absolute top-20 left-20 w-40 h-40 rounded-full bg-[#008080]/10"></div>
-      <div className="absolute bottom-20 right-20 w-32 h-32 rounded-full bg-[#FF7F50]/10"></div>
-      <div className="absolute top-1/2 left-1/2 w-48 h-48 rounded-full bg-[#008080]/5"></div>
+      <div className="absolute top-10 sm:top-20 left-10 sm:left-20 w-24 sm:w-32 md:w-40 h-24 sm:h-32 md:h-40 rounded-full bg-[#008080]/10"></div>
+      <div className="absolute bottom-10 sm:bottom-20 right-10 sm:right-20 w-20 sm:w-24 md:w-32 h-20 sm:h-24 md:h-32 rounded-full bg-[#FF7F50]/10"></div>
+      <div className="absolute top-1/2 left-1/2 w-32 sm:w-40 md:w-48 h-32 sm:h-40 md:h-48 rounded-full bg-[#008080]/5"></div>
 
-      <div className="container mx-auto px-4 relative">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              These services aim to enhance<br />
-              the quality of <span className="text-[#008080]">Life of Seniors</span>
+          <div className="text-center mb-8 sm:mb-12 md:mb-14 lg:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-5xl font-bold mb-4">
+              <span className="block">These services aim to enhance</span>
+              <span className="block">the quality of <span className="text-[#008080]">Life of Seniors</span></span>
             </h2>
           </div>
 
           {/* Services Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             {services.map((service, index) => (
               <div 
                 key={index}
-                className="group relative bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300"
+                className="group relative bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 {/* Image container */}
-                <div className="relative h-64 w-full">
+                <div className="relative h-48 sm:h-56 md:h-64 w-full">
                   <Image
                     src={service.image}
                     alt={service.title}
                     fill
-                    className="object-cover"
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                   {/* Decorative circles */}
-                  <div className="absolute top-4 left-4 w-16 h-16 rounded-full bg-[#008080]/20"></div>
+                  <div className="absolute top-3 sm:top-4 left-3 sm:left-4 w-12 sm:w-14 md:w-16 h-12 sm:h-14 md:h-16 rounded-full bg-[#008080]/20"></div>
                   {index % 2 === 0 && (
-                    <div className="absolute bottom-4 right-4 w-12 h-12 rounded-full bg-[#FF7F50]/20"></div>
+                    <div className="absolute bottom-3 sm:bottom-4 right-3 sm:right-4 w-8 sm:w-10 md:w-12 h-8 sm:h-10 md:h-12 rounded-full bg-[#FF7F50]/20"></div>
                   )}
                 </div>
 
                 {/* Content */}
-                <div className="p-6">
-                  <span className="text-[#008080] text-sm font-semibold tracking-wider">
+                <div className="p-4 sm:p-5 md:p-6">
+                  <span className="text-[#008080] text-xs sm:text-sm font-semibold tracking-wider">
                     {service.category}
                   </span>
-                  <h3 className="text-xl font-bold text-gray-900 mt-2 mb-3">
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-900 mt-2 mb-2 sm:mb-3">
                     {service.title}
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-sm sm:text-base text-gray-600">
                     {service.description}
                   </p>
                 </div>

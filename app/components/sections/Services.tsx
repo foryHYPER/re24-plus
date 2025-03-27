@@ -26,23 +26,25 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="py-24 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <span className="text-[#4CAF50] font-semibold mb-4 tracking-wide block">
+    <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gray-50">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-8 sm:mb-12 md:mb-14 lg:mb-16">
+          <span className="text-[#4CAF50] text-sm sm:text-base font-semibold mb-2 sm:mb-3 md:mb-4 tracking-wide block">
             UNSERE LEISTUNGEN
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Unterstützungsangebote unserer<br />
-            häuslichen Betreuung im Überblick
+          <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-5xl font-bold mb-4">
+            <span className="block">Unterstützungsangebote unserer</span>
+            <span className="block">häuslichen Betreuung im Überblick</span>
           </h2>
         </div>
 
-        {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-7 lg:gap-8 max-w-7xl mx-auto">
           {services.map((service, index) => (
-            <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-xl transition-shadow duration-300">
-              <div className="relative h-[200px]">
+            <div 
+              key={index} 
+              className="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-xl transition-shadow duration-300"
+            >
+              <div className="relative h-[180px] sm:h-[200px] md:h-[220px] lg:h-[200px] xl:h-[220px] 2xl:h-[240px]">
                 <Image
                   src={service.image}
                   alt={service.title}
@@ -51,9 +53,13 @@ export default function Services() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/60" />
               </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-semibold mb-4 text-gray-900">{service.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{service.description}</p>
+              <div className="p-4 sm:p-5 md:p-6">
+                <h3 className="text-xl sm:text-2xl font-semibold mb-2 sm:mb-3 md:mb-4 text-gray-900">
+                  {service.title}
+                </h3>
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+                  {service.description}
+                </p>
               </div>
             </div>
           ))}
