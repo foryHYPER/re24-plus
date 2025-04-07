@@ -31,7 +31,7 @@ export default function DementiaCare() {
               {/* Image for first column */}
               <div className="relative h-56 sm:h-64 md:h-72 rounded-xl sm:rounded-2xl overflow-hidden shadow-lg">
                 <Image
-                  src="/MA2.jpg"
+                  src="/logo.png"
                   alt="Dementia Care"
                   fill
                   className="object-cover transition-transform duration-300 hover:scale-105"
