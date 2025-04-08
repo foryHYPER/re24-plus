@@ -22,25 +22,26 @@ const teamMembers = [
 
 export default function TeamSection() {
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
+    <section className="relative py-12 sm:py-16 md:py-20 lg:py-24 bg-white overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 right-20 w-72 h-72 bg-[#008080]/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 left-20 w-72 h-72 bg-[#4CAF50]/5 rounded-full blur-3xl"></div>
       </div>
 
-      <div className="container mx-auto px-4 relative">
-        <div className="max-w-7xl mx-auto">
-          {/* Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              UNSER TEAM
-            </h2>
-            <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
-              Wir sind RE-24 Plus – Ihr erfahrener Partner für professionelle und individuelle häusliche Betreuung von pflegebedürftigen Personen im Rhein-Neckar-Kreis.
-            </p>
-          </div>
+      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
+        {/* Header */}
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-gray-900">
+            UNSER TEAM
+          </h2>
+          <p className="body-text max-w-3xl mx-auto">
+            Wir sind RE-24 Plus – Ihr erfahrener Partner für professionelle und individuelle häusliche Betreuung von pflegebedürftigen Personen im Rhein-Neckar-Kreis.
+          </p>
+        </div>
 
+        {/* Main Content Area */}
+        <div>
           {/* Team Grid */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {teamMembers.map((member, index) => (

@@ -60,49 +60,47 @@ const services = [
 
 export default function OurServices() {
   return (
-    <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gray-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          {/* Header */}
-          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 sm:mb-12 md:mb-14 lg:mb-16">
-            <div className="mb-6 sm:mb-0">
-              <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-5xl font-bold text-gray-900">
-                Our services
-              </h2>
-              <p className="mt-3 sm:mt-4 text-base sm:text-lg text-gray-600 max-w-3xl">
-                At The ElderWell, we offer a comprehensive range of services designed to meet the unique needs of seniors, ensuring they receive the care and support they deserve.
-              </p>
-            </div>
-            <button className="bg-[#1B2A3B] text-white px-5 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base rounded-full hover:bg-[#2C3E50] transition-colors shadow-lg hover:shadow-xl">
-              All services
-            </button>
+    <section className="relative py-12 sm:py-16 md:py-20 lg:py-24 bg-gray-50">
+      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
+        {/* Header - Custom layout, not the standard centered one */}
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-12 md:mb-16">
+          <div className="mb-6 sm:mb-0">
+            <h2 className="text-gray-900">
+              Our services
+            </h2>
+            <p className="body-text mt-3 sm:mt-4 max-w-3xl">
+              At The ElderWell, we offer a comprehensive range of services designed to meet the unique needs of seniors, ensuring they receive the care and support they deserve.
+            </p>
           </div>
+          <button className="bg-[#1B2A3B] text-white px-5 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base rounded-full hover:bg-[#2C3E50] transition-colors shadow-lg hover:shadow-xl">
+            All services
+          </button>
+        </div>
 
-          {/* Services Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
-            {services.map((service, index) => (
-              <div 
-                key={index}
-                className="bg-white p-6 sm:p-7 md:p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
-              >
-                <div className="mb-4 sm:mb-6">
-                  {service.icon}
-                </div>
-                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3 sm:mb-4">
-                  {service.title}
-                </h3>
-                <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6">
-                  {service.description}
-                </p>
-                <Link 
-                  href={`/services/${service.title.toLowerCase().replace(/\s+/g, '-')}`}
-                  className="text-[#4CAF50] text-sm sm:text-base font-medium hover:text-[#43A047] transition-colors"
-                >
-                  Learn more
-                </Link>
+        {/* Main Content Area */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+          {services.map((service, index) => (
+            <div 
+              key={index}
+              className="bg-white p-6 sm:p-7 md:p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+            >
+              <div className="mb-4 sm:mb-6">
+                {service.icon}
               </div>
-            ))}
-          </div>
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3 sm:mb-4">
+                {service.title}
+              </h3>
+              <p className="body-text text-sm sm:text-base mb-4 sm:mb-6">
+                {service.description}
+              </p>
+              <Link 
+                href={`/services/${service.title.toLowerCase().replace(/\s+/g, '-')}`}
+                className="text-[#4CAF50] text-sm sm:text-base font-medium hover:text-[#43A047] transition-colors"
+              >
+                Learn more
+              </Link>
+            </div>
+          ))}
         </div>
       </div>
     </section>
