@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function Navbar2() {
   return (
-    <header className="w-full bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+    <header className="w-full bg-white shadow-md top-0 left-0 right-0 z-50">
       {/* Top Bar - Logo, Contact Info, CTA Button */}
       <div className="max-w-[95%] sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto px-4 sm:px-6 py-5">
         <div className="flex items-center justify-between">

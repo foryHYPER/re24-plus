@@ -24,7 +24,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="relative py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-b from-white to-gray-50 min-h-[80vh]">
+    <section className="relative py-12 sm:py-16 md:py-20 lg:py-24 bg-gray-50">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
         {/* Header */}
         <div className="text-center mb-12 md:mb-16 max-w-3xl mx-auto">

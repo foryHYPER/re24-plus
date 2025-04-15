@@ -45,8 +45,7 @@ export default function Support() {
             UNTERSTÜTZUNG
           </span>
           <h2>
-            <span className="block">Zuverlässige Hilfe für</span>
-            <span className="block">pflegende Angehörige</span>
+            <span className="block">Zuverlässige Hilfe für pflegende Angehörige</span>
           </h2>
         </div>
 
@@ -63,7 +62,7 @@ export default function Support() {
               </div>
               <div className="relative h-48 sm:h-56 md:h-64 rounded-xl overflow-hidden shadow-lg">
                 <Image
-                  src="/caregiver.jpg"
+                  src="/5.jpg"
                   alt="Pflegende Angehörige"
                   fill
                   className="object-cover"

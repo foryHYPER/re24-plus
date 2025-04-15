@@ -18,7 +18,7 @@ const advantages = [
 
 export default function HowWeWork() {
   return (
-    <section className="relative py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-b from-white to-gray-50">
+    <section className="relative py-12 sm:py-16 md:py-20 lg:py-24 bg-white">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
         {/* Header */}
         <div className="text-center mb-12 md:mb-16">

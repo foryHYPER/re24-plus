@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Hero() {
   return (
-    <section className="relative h-screen -mt-[140px] flex flex-col items-center justify-center text-center py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8">
+    <section className="relative h-screen flex flex-col items-center justify-center text-center py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8">
       {/* Background image with overlay */}
       <div className="absolute inset-0 bg-[url('/Hero-2.jpg')] bg-cover bg-center">
         <div className="absolute inset-0 bg-black/40"></div>

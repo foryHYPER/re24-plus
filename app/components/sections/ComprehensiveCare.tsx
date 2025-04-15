@@ -10,11 +10,11 @@ export default function ComprehensiveCare() {
           src="/Mission.jpg"
           alt="Ganzheitliche Pflege zu Hause"
           fill
-          className="object-cover opacity-10"
+          className="object-cover"
           priority
         />
         {/* Gradient overlay for better text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/50"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
       </div>
 
       {/* Content */}
@@ -27,14 +27,14 @@ export default function ComprehensiveCare() {
         </div>
         
         {/* Main Content Area */}
-        <div className="prose prose-lg mx-auto max-w-4xl text-center">
-          <p className="body-text text-white">
+        <div className="mx-auto max-w-4xl text-center text-lg">
+          <p className="text-white">
             Bei RE-24 Plus dreht sich alles um eine umfassende Betreuung für Senioren, die den Alltag Ihrer Liebsten erleichtert und bereichert. Unsere Betreuungskräfte kümmern sich einfühlsam um die Grundpflege, helfen bei der Körperpflege, bereiten Mahlzeiten zu und unterstützen im Haushalt.
           </p>
-          <p className="body-text text-white mt-4 sm:mt-6">
+          <p className="text-white mt-4 sm:mt-6">
             Sie führen zudem unter Anleitung von Therapeuten und Ärzten bestimmte Aktivitäten durch. Medizinische Aufgaben und Krankenpflege wie Injektionen oder spezielle Wundversorgung, fallen in den Bereich der häuslichen Pflege und müssen von examinierten Pflegekräften oder medizinischem Fachpersonal durchgeführt werden.
           </p>
-          <p className="body-text text-white mt-4 sm:mt-6">
+          <p className="text-white mt-4 sm:mt-6">
             Dafür vermitteln wir Sie gerne an einen Pflegedienst in Ihrer Nähe.
           </p>
 

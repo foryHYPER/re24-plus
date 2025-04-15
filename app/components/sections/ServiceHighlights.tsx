@@ -3,46 +3,46 @@ import Image from 'next/image';
 
 const services = [
   {
-    category: "ASSISTED LIVING",
-    title: "Social activities",
-    description: "Organizing social events, group outings, and recreational activities tailored",
+    category: "BETREUTES WOHNEN",
+    title: "Soziale Aktivitäten",
+    description: "Organisation von gesellschaftlichen Veranstaltungen, Gruppenausflügen und Freizeitaktivitäten",
     image: "/MA2.jpg"
   },
   {
-    category: "PRIVATE NURSING",
-    title: "Transportation services",
-    description: "Assisting seniors with transportation to medical appointments, social outings",
+    category: "PRIVATE PFLEGE",
+    title: "Transportdienste",
+    description: "Unterstützung von Senioren beim Transport zu Arztterminen, gesellschaftlichen Ausflügen",
     image: "/MA3.jpg"
   },
   {
-    category: "PHYSICAL THERAPY",
-    title: "Health monitoring",
-    description: "Utilizing technology and remote monitoring systems to track vital signs, medication",
+    category: "PHYSIOTHERAPIE",
+    title: "Gesundheitsüberwachung",
+    description: "Einsatz von Technologie und Fernüberwachungssystemen zur Verfolgung von Vitalzeichen, Medikamenten",
     image: "/MA4.jpg"
   },
   {
-    category: "PHYSICAL THERAPY",
-    title: "Caregiver support",
-    description: "Assisting seniors with transportation to medical appointments, social outings",
+    category: "PHYSIOTHERAPIE",
+    title: "Unterstützung für Pflegekräfte",
+    description: "Unterstützung von Senioren beim Transport zu Arztterminen, gesellschaftlichen Ausflügen",
     image: "/MA5.jpg"
   },
   {
-    category: "PRIVATE NURSING",
-    title: "Memory care",
-    description: "Assisting seniors with transportation to medical appointments, social outings",
+    category: "PRIVATE PFLEGE",
+    title: "Demenzbetreuung",
+    description: "Unterstützung von Senioren beim Transport zu Arztterminen, gesellschaftlichen Ausflügen",
     image: "/MA2.jpg"
   },
   {
-    category: "ASSISTED LIVING",
-    title: "In-home care",
-    description: "Utilizing technology and remote monitoring systems to track vital signs, medication",
+    category: "BETREUTES WOHNEN",
+    title: "Häusliche Pflege",
+    description: "Einsatz von Technologie und Fernüberwachungssystemen zur Verfolgung von Vitalzeichen, Medikamenten",
     image: "/MA2.jpg"
   }
 ];
 
 export default function ServiceHighlights() {
   return (
-    <section className="relative py-12 sm:py-16 md:py-20 lg:py-24 bg-gray-50 overflow-hidden">
+    <section className="relative py-12 sm:py-16 md:py-20 lg:py-24 bg-white">
       {/* Decorative circles */}
       <div className="absolute top-10 sm:top-20 left-10 sm:left-20 w-24 sm:w-32 md:w-40 h-24 sm:h-32 md:h-40 rounded-full bg-[#008080]/10"></div>
       <div className="absolute bottom-10 sm:bottom-20 right-10 sm:right-20 w-20 sm:w-24 md:w-32 h-20 sm:h-24 md:h-32 rounded-full bg-[#FF7F50]/10"></div>
@@ -52,8 +52,8 @@ export default function ServiceHighlights() {
         {/* Header */}
         <div className="text-center mb-12 md:mb-16">
           <h2>
-            <span className="block">These services aim to enhance</span>
-            <span className="block">the quality of <span className="text-[#008080]">Life of Seniors</span></span>
+            <span className="block">Diese Dienste zielen darauf ab,</span>
+            <span className="block">die <span className="text-[#008080]">Lebensqualität von Senioren</span> zu verbessern</span>
           </h2>
         </div>
 

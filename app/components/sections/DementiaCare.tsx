@@ -30,14 +30,13 @@ export default function DementiaCare() {
             </div>
 
             {/* Image for first column */}
-            <div className="relative h-56 sm:h-64 md:h-72 rounded-xl sm:rounded-2xl overflow-hidden shadow-lg">
+            <div className="relative h-40 sm:h-48 md:h-56">
               <Image
                 src="/logo.png"
                 alt="Dementia Care"
                 fill
-                className="object-cover transition-transform duration-300 hover:scale-105"
+                className="object-contain transition-transform duration-300 hover:scale-105"
               />
-              <div className="absolute inset-0 bg-[#008080]/10"></div>
             </div>
           </div>
 
@@ -45,9 +44,6 @@ export default function DementiaCare() {
           <div className="space-y-6 sm:space-y-8">
             <div className="max-w-xl">
               <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
-                <svg className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-[#008080]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
                 <h2 className="text-gray-900">
                   Qualität und Sicherheit bei RE-24 Plus
                 </h2>
