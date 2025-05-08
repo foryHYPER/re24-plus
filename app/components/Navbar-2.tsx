@@ -3,6 +3,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Navbar2() {
+  const navigation = [
+    { name: 'Home', href: '/' },
+    { name: 'Über uns', href: '/ueber-uns' },
+    { name: 'Leistungen', href: '/leistungen' },
+    { name: 'Kosten', href: '/kosten' },
+    { name: 'Kontakt', href: '/kontakt' },
+  ];
+
   return (
     <header className="w-full bg-white shadow-md top-0 left-0 right-0 z-50">
       {/* Top Bar - Logo, Contact Info, CTA Button */}
@@ -64,26 +72,13 @@ export default function Navbar2() {
             {/* Navigation Links */}
             <nav className="flex-1">
               <ul className="flex space-x-8 py-5">
-                <li>
-                  <Link href="/" className="text-gray-700 hover:text-[#4CAF50] font-medium transition-colors px-2 py-3">
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/24-stunden-betreuung" className="text-gray-700 hover:text-[#4CAF50] font-medium transition-colors px-2 py-3">
-                    24 Stunden Betreuung
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/kosten" className="text-gray-700 hover:text-[#4CAF50] font-medium transition-colors px-2 py-3">
-                    Kosten & Überblick
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/ueber-uns" className="text-gray-700 hover:text-[#4CAF50] font-medium transition-colors px-2 py-3">
-                    Über uns
-                  </Link>
-                </li>
+                {navigation.map((item) => (
+                  <li key={item.name}>
+                    <Link href={item.href} className="text-gray-700 hover:text-[#4CAF50] font-medium transition-colors px-2 py-3">
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </nav>
 

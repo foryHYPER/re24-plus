@@ -1,3 +1,6 @@
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 import Hero from './components/sections/Hero';
 import Mission from './components/sections/Mission';
 import Services from './components/sections/Services';
@@ -14,7 +17,6 @@ import DementiaCare from './components/sections/DementiaCare';
 import LocalService from './components/sections/LocalService';
 import TeamSection from './components/sections/TeamSection';
 import ContactSection from './components/sections/ContactSection';
-
 
 export default function Home() {
   return (

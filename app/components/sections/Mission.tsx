@@ -3,8 +3,8 @@ import React from 'react';
 
 export default function Mission() {
   return (
-    <section className="relative py-12 sm:py-16 md:py-20 lg:py-24 bg-white">
-      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
+    <section className="section-container-white">
+      <div className="section-container-content">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
           {/* Left side - Text content */}
           <div className="max-w-xl">

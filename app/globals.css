@@ -11,3 +11,15 @@ h2 {
 .body-text {
   @apply text-gray-600 text-base sm:text-lg leading-relaxed;
 }
+
+.section-container-white {
+  @apply relative py-12 sm:py-16 md:py-20 lg:py-24 bg-white;
+}
+
+.section-container-content {
+  @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative;
+}
+
+.section-container-gray {
+@apply relative py-12 sm:py-16 md:py-20 lg:py-24 bg-gray-50;
+}

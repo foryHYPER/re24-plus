@@ -33,8 +33,8 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="relative py-12 sm:py-16 md:py-20 lg:py-24 bg-gray-50">
-      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
+    <section className="section-container-gray">
+      <div className="section-container-content">
         <div className="text-center mb-12 md:mb-16">
           <span className="section-subtitle">LEISTUNGEN</span>
           <h2>
