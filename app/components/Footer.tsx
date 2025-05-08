@@ -35,18 +35,23 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-gray-200 hover:text-white transition-colors">
-                  Leistungen
+                <Link href="/24-stunden-betreuung" className="text-gray-200 hover:text-white transition-colors">
+                  24 Stunden Betreuung
                 </Link>
               </li>
               <li>
-                <Link href="/team" className="text-gray-200 hover:text-white transition-colors">
-                  Unser Team
+                <Link href="/ueber-uns" className="text-gray-200 hover:text-white transition-colors">
+                  Über uns
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-200 hover:text-white transition-colors">
-                  Kontakt
+                <Link href="/kosten" className="text-gray-200 hover:text-white transition-colors">
+                  Kosten & Überblick
+                </Link>
+              </li>
+              <li>
+                <Link href="/anfrage" className="text-gray-200 hover:text-white transition-colors">
+                  Anfrage
                 </Link>
               </li>
             </ul>

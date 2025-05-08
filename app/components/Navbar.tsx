@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,38 +18,40 @@ export default function Navbar() {
         <div className="flex items-center justify-between relative">
           {/* Left - Logo */}
           <div className="hidden md:flex items-center w-auto md:w-1/4">
-            <div
-              className={`w-40 md:w-48 transition-all duration-300 transform ${
-                mounted && isOpen
-                  ? 'opacity-0 invisible -translate-y-4 lg:opacity-100 lg:visible lg:translate-y-0'
-                  : 'opacity-100 visible translate-y-0'
-              } hidden max-[1021px]:block max-[1021px]:opacity-0 max-[1021px]:invisible`}
-            >
-              <Image
-                src="/logo.png"
-                alt="RE-24 Plus Logo"
-                width={240}
-                height={90}
-                className="w-auto h-auto"
-                priority
-              />
-            </div>
+            <Link href="/" className="block">
+              <div
+                className={`w-40 md:w-48 transition-all duration-300 transform ${
+                  mounted && isOpen
+                    ? 'opacity-0 invisible -translate-y-4 lg:opacity-100 lg:visible lg:translate-y-0'
+                    : 'opacity-100 visible translate-y-0'
+                } hidden max-[1021px]:block max-[1021px]:opacity-0 max-[1021px]:invisible`}
+              >
+                <Image
+                  src="/logo.png"
+                  alt="RE-24 Plus Logo"
+                  width={240}
+                  height={90}
+                  className="w-auto h-auto"
+                  priority
+                />
+              </div>
+            </Link>
           </div>
 
           {/* Center - Navigation Items */}
-          <div className="hidden lg:flex items-center justify-center gap-6 xl:gap-12 flex-1">
-            <button className="text-white hover:text-gray-200 text-lg xl:text-2xl font-medium whitespace-nowrap transition-colors">
+          <div className="flex items-center justify-center space-x-8 lg:space-x-12">
+            <Link href="/" className="text-white hover:text-gray-200 text-lg xl:text-2xl font-medium whitespace-nowrap transition-colors">
               Home
-            </button>
-            <button className="text-white hover:text-gray-200 text-lg xl:text-2xl font-medium whitespace-nowrap transition-colors">
+            </Link>
+            <Link href="/24-stunden-betreuung" className="text-white hover:text-gray-200 text-lg xl:text-2xl font-medium whitespace-nowrap transition-colors">
               24 Stunden Betreuung
-            </button>
-            <button className="text-white hover:text-gray-200 text-lg xl:text-2xl font-medium whitespace-nowrap transition-colors">
+            </Link>
+            <Link href="/kosten" className="text-white hover:text-gray-200 text-lg xl:text-2xl font-medium whitespace-nowrap transition-colors">
               Kosten & Überblick
-            </button>
-            <button className="text-white hover:text-gray-200 text-lg xl:text-2xl font-medium whitespace-nowrap transition-colors">
+            </Link>
+            <Link href="/ueber-uns" className="text-white hover:text-gray-200 text-lg xl:text-2xl font-medium whitespace-nowrap transition-colors">
               Über uns
-            </button>
+            </Link>
           </div>
 
           {/* Right - Contact Button */}
@@ -60,9 +63,11 @@ export default function Navbar() {
                   : 'opacity-100 visible translate-y-0'
               } hidden max-[1021px]:block max-[1021px]:opacity-0 max-[1021px]:invisible`}
             >
-              <button className="bg-[#e8f2eb] text-black px-6 md:px-8 lg:px-10 py-2 md:py-3 lg:py-4 rounded-full hover:bg-white transition-all text-base md:text-xl lg:text-2xl whitespace-nowrap shadow-lg hover:shadow-xl">
-                Anfrage
-              </button>
+              <Link href="/anfrage" className="inline-block">
+                <button className="bg-[#e8f2eb] text-black px-6 md:px-8 lg:px-10 py-2 md:py-3 lg:py-4 rounded-full hover:bg-white transition-all text-base md:text-xl lg:text-2xl whitespace-nowrap shadow-lg hover:shadow-xl">
+                  Anfrage
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -99,21 +104,21 @@ export default function Navbar() {
               mounted && isOpen ? 'translate-y-0' : '-translate-y-8'
             }`}
           >
-            <button className="text-white hover:text-gray-200 text-center text-2xl sm:text-3xl font-medium transition-colors">
+            <Link href="/" className="text-white hover:text-gray-200 text-center text-2xl sm:text-3xl font-medium transition-colors">
               Home
-            </button>
-            <button className="text-white hover:text-gray-200 text-center text-2xl sm:text-3xl font-medium transition-colors">
+            </Link>
+            <Link href="/24-stunden-betreuung" className="text-white hover:text-gray-200 text-center text-2xl sm:text-3xl font-medium transition-colors">
               24 Stunden Betreuung
-            </button>
-            <button className="text-white hover:text-gray-200 text-center text-2xl sm:text-3xl font-medium transition-colors">
+            </Link>
+            <Link href="/kosten" className="text-white hover:text-gray-200 text-center text-2xl sm:text-3xl font-medium transition-colors">
               Kosten & Überblick
-            </button>
-            <button className="text-white hover:text-gray-200 text-center text-2xl sm:text-3xl font-medium transition-colors">
+            </Link>
+            <Link href="/ueber-uns" className="text-white hover:text-gray-200 text-center text-2xl sm:text-3xl font-medium transition-colors">
               Über uns
-            </button>
-            <button className="bg-[#e8f2eb] text-black px-8 py-3 rounded-full hover:bg-white transition-all text-xl sm:text-2xl shadow-lg hover:shadow-xl mt-4">
+            </Link>
+            <Link href="/anfrage" className="bg-[#e8f2eb] text-black px-8 py-3 rounded-full hover:bg-white transition-all text-xl sm:text-2xl shadow-lg hover:shadow-xl mt-4">
               Anfrage
-            </button>
+            </Link>
           </div>
         </div>
       </div>
