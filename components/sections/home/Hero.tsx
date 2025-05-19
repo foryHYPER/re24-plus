@@ -1,17 +1,27 @@
 import React from 'react';
+import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <section className="relative h-screen flex flex-col items-center justify-center text-center py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8">
+    <section className="relative h-[calc(100vh-202px)] flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8">
       {/* Background image with overlay */}
-      <div className="absolute inset-0 bg-[url('/Hero-2.jpg')] bg-cover bg-center">
+      <div className="absolute inset-0">
+        <Image
+          src="/Hero-2.jpg"
+          alt="Junge und ältere Hände im Rahmen der Seniorenbetreuung zu Hause"
+          title="Professionelle häusliche Betreuung und Pflege für Senioren"
+          fill
+          priority
+          className="object-cover"
+          quality={100}
+        />
         <div className="absolute inset-0 bg-black/40"></div>
       </div>
       
       {/* Content Container */}
       <div className="container mx-auto max-w-7xl relative z-10">
         {/* Main Content Area */}
-        <div className="max-w-[95%] sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto text-white mt-[70px]">
+        <div className="max-w-[95%] sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto text-white">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6">
             Seniorenbetreuung zu Hause{" "}
             <br className="hidden sm:block" />

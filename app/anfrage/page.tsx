@@ -1,5 +1,5 @@
 import React from 'react';
-import RequestForm from '@/app/components/forms/RequestForm';
+import RequestForm from '@/components/forms/RequestForm';
 
 export default function AnfragePage() {
   return (

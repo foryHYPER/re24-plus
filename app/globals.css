@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 h2 {
-  @apply text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight;
+  @apply text-3xl sm:text-3xl lg:text-3xl font-bold mb-4 sm:mb-6 leading-tight;
 }
 
 .section-subtitle {
