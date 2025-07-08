@@ -1,6 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
 import Hero from '../components/sections/home/Hero';
 import Mission from '../components/sections/home/Mission';
 import Services from '../components/sections/home/Services';
