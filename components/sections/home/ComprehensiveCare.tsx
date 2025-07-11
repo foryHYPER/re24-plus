@@ -7,7 +7,7 @@ export default function ComprehensiveCare() {
       {/* Full-width background image */}
       <div className="absolute inset-0 bg-black/40">
         <Image
-          src="/Mission.jpg"
+          src="/mission.jpg"
           alt="Ganzheitliche Pflege zu Hause"
           fill
           className="object-cover"

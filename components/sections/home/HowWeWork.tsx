@@ -65,7 +65,7 @@ export default function HowWeWork() {
           <div className="relative h-[400px] sm:h-[500px] md:h-[550px] lg:h-[600px] rounded-xl overflow-hidden shadow-lg group">
             <div className="absolute inset-0 bg-[#4CAF50]/0 group-hover:bg-[#4CAF50]/10 transition-colors duration-300 z-10"></div>
             <Image
-              src="/Mission.jpg"
+              src="/mission.jpg"
               alt="Wie wir arbeiten - Seniorenbetreuung"
               fill
               className="object-cover transition-transform duration-300 group-hover:scale-105"

@@ -32,7 +32,7 @@ export default function Mission() {
           {/* Right side - Image */}
           <div className="relative h-[400px] sm:h-[500px] md:h-[550px] lg:h-[600px] rounded-xl overflow-hidden shadow-lg">
             <Image
-              src="/Mission.jpg"
+              src="/mission.jpg"
               alt="Unser Ziel"
               fill
               className="object-cover"
